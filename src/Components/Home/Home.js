@@ -2,6 +2,9 @@ import React from 'react';
 import Footer from '../Footer/Footer';
 import Logo from "../../images/netflix_logo.png";
 import LanguageChoice from '../LanguageChoice/LanguageChoice';
+import './home.css'
+import ButtonLogin from '../Buttons/ButtonLogin';
+import ButtonBegin from '../Buttons/ButtonBegin';
 
 
 const Home = () => {
@@ -10,7 +13,7 @@ const Home = () => {
     <>
       <div className="home-imgBg">
         <header className="header">
-          <nav class="header navbar">
+          <nav class="navbar">
             <div className="container">
               <a className="navbar-brand">
                 {" "}
@@ -19,9 +22,7 @@ const Home = () => {
               <form className="d-flex">
                 <LanguageChoice />
 
-                <button type="button" className=" btn home-btn-login">
-                  S'identifier
-                </button>
+               <ButtonLogin/>
               </form>
             </div>
           </nav>
@@ -51,9 +52,7 @@ const Home = () => {
                   className="input-email"
                   placeholder="Adresse e-mail"
                 />
-                <button type="submit" className="btn btn-red btn-begin">
-                  <span className="cta-btn-txt">Commencer </span>
-                </button>
+               <ButtonBegin/>
               </div>
             </form>
           </div>
